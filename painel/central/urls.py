@@ -19,9 +19,10 @@ from django.urls import path, include
 from apiBot import urls
 from django.conf import settings
 from django.conf.urls.static import static
+from accounts import urls
 
 urlpatterns = [
+    path('', include('accounts.urls')),
     path('admin/', admin.site.urls),
-    path('', include('apiBot.urls')),
     path('apibot/', include('apiBot.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

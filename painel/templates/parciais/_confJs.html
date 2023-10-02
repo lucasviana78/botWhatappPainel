@@ -1,8 +1,8 @@
 {% load static %}
 <!-- jQuery -->
-<script src="src/plugins/jquery/jquery.min.js"></script>
+<script src="{% static 'src/plugins/jquery/jquery.min.js' %}"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="src/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="{% static 'src/plugins/jquery-ui/jquery-ui.min.js' %}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)

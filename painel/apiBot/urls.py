@@ -4,5 +4,7 @@ from django.urls import path
 from apiBot import views
 
 urlpatterns = [
-    path('', views.sendMessage),
+    path('api/send', views.sendMessage, name='send'),
+    path('api/recep', views.recepMessage, name='recep'),
+    path('api/confirm', views.confirmMessage, name='confirm'),
 ]
