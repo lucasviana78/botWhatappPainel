@@ -20,9 +20,11 @@ from apiBot import urls
 from django.conf import settings
 from django.conf.urls.static import static
 from accounts import urls
+from pedidos import urls
 
 urlpatterns = [
     path('', include('accounts.urls')),
+    path('pedidos/', include('pedidos.urls')),
     path('admin/', admin.site.urls),
     path('apibot/', include('apiBot.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
