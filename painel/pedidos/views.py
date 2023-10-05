@@ -4,5 +4,12 @@ from django.contrib.auth.decorators import login_required
 
 
 @login_required(redirect_field_name='login')
+def painelPedidos(request):
+    return render(request, 'pedidos/PainelPedidos.html')
+
+
+@login_required(redirect_field_name='login')
 def painelCozinha(request):
     return render(request, 'pedidos/painelCozinha.html')
+
+

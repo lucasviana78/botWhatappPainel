@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def sendMessage(request):
-    return HttpResponse('enviando' + "|" + " 1" + "|" + " 11953635910 " + "|" + " Pato não voa")
+    return HttpResponse('enviando' + "|" + " 1" + "|" + " 11953635910 " + "|" + " Teste BOT")
 
 
 def recepMessage(request):
